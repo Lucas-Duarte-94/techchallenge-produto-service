@@ -1,5 +1,7 @@
 package com.tech_challenge.fiap_produto_service.core.domain.entity;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -19,5 +21,6 @@ public class Produto {
     @Id
     @Column(name = "product_sku")
     private String productSKU;
+    private BigDecimal preco;
     private String description;
 }
